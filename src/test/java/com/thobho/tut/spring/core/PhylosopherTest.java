@@ -3,12 +3,10 @@ package com.thobho.tut.spring.core;
 import java.util.List;
 import java.util.logging.Logger;
 
+import com.thobho.tut.spring.core.beans.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.thobho.tut.spring.core.beans.HeavyQuestion;
-import com.thobho.tut.spring.core.beans.Philosopher;
-import com.thobho.tut.spring.core.beans.PhilosopherAttribute;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
@@ -31,6 +29,9 @@ public class PhylosopherTest {
 	@Autowired
 	@Qualifier("russian_philosopher")
 	private Philosopher russionPhylosopher;
+
+	@Autowired
+	private Car car;
 
 	@Test
 	public void testQuestion(){
@@ -62,6 +63,24 @@ public class PhylosopherTest {
 		List<PhilosopherAttribute> attributes = russionPhylosopher.getAttributes();
 
 		assertEquals(2, attributes.size());
+	}
+
+	@Test
+	public void testCar(){
+		String brand = car.getBrand();
+		assertEquals("Skoda", brand);
+	}
+
+	@Test
+	public void testCarEngine(){
+		Engine engine = car.getEngine();
+		assertEquals(1200, engine.getEngineVolume());
+	}
+
+	@Test
+	public void testCarEngine2(){
+		Engine engine = car.getEngine();
+		assertEquals(1300, engine.getEngineVolume());
 	}
 
 }

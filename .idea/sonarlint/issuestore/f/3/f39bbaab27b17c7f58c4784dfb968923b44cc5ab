@@ -1,5 +1,0 @@
-
-©%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(¾ýˆ„8½÷ð±»,
-©%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(ˆ’€·8½÷ð±»,
-Vsquid:S1161":Add the "@Override" annotation above this method signature(¾ýˆ„8½÷ð±»,
-Vsquid:S1161":Add the "@Override" annotation above this method signature(ˆ’€·8½÷ð±»,

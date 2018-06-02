@@ -48,5 +48,17 @@
         <property name="name" value="janusz"/>
     </bean>
 
+    <bean class="com.thobho.tut.spring.core.beans.Car">
+        <constructor-arg name="brand" value="Skoda"/>
+        <constructor-arg type="int" value="120"/>
+        <property name="engine" ref="engine"/>
+    </bean>
+
+    <bean id="engine" class="com.thobho.tut.spring.core.beans.Engine">
+        <constructor-arg name="engineVolume" value="1200"/>
+        <constructor-arg name="engineType" value="GAS"/>
+    </bean>
+
     <bean class="com.thobho.tut.spring.core.beans.PhylosophyBeanPostProcessor"/>
+    <bean class="com.thobho.tut.spring.core.beans.EngineBeanPostprocessor"/>
 </beans>

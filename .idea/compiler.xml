@@ -9,8 +9,5 @@
         <module name="spring-core-philosophers" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spring-core-philosophers" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
