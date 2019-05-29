@@ -1,17 +1,14 @@
-package com.thobho.tut.spring.core.beans;
+package com.thobho.tut.spring.core.beans.philosopher;
 
 import java.util.List;
 
 import org.springframework.beans.factory.InitializingBean;
 
-public class Philosopher implements InitializingBean{
+public class Philosopher implements InitializingBean {
 
 	private String name;
 	private HeavyQuestion mostImportantQuestion;
 	private List<PhilosopherAttribute> attributes;
-
-	public Philosopher() {
-	}
 
 	public String getName() {
 		return name;
@@ -21,6 +18,7 @@ public class Philosopher implements InitializingBean{
 		this.name = name;
 	}
 
+	@Override
 	public void afterPropertiesSet() throws Exception {
 		name = name.substring( 0,1 ).toUpperCase() + name.substring(1);
 	}

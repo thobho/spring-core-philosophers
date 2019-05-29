@@ -1,4 +1,4 @@
-package com.thobho.tut.spring.core.beans;
+package com.thobho.tut.spring.core.beans.car;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

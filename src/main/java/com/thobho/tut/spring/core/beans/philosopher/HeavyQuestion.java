@@ -1,4 +1,4 @@
-package com.thobho.tut.spring.core.beans;
+package com.thobho.tut.spring.core.beans.philosopher;
 
 public class HeavyQuestion {
 

@@ -1,4 +1,4 @@
-package com.thobho.tut.spring.core.beans;
+package com.thobho.tut.spring.core.beans.car;
 
 public class Car {
 

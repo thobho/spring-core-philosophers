@@ -1,6 +1,5 @@
-package com.thobho.tut.spring.core.beans;
+package com.thobho.tut.spring.core.beans.philosopher;
 
-import com.thobho.tut.spring.core.beans.HeavyQuestion;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 

@@ -1,9 +1,10 @@
-package com.thobho.tut.spring.core;
+package com.thobho.tut.spring.core.beans.philosopher;
 
 import java.util.List;
 import java.util.logging.Logger;
 
-import com.thobho.tut.spring.core.beans.*;
+import com.thobho.tut.spring.core.beans.car.Car;
+import com.thobho.tut.spring.core.beans.car.Engine;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -59,28 +60,9 @@ public class PhylosopherTest {
 	}
 
 	@Test
-	public void testRussionPhylospoherAttributes(){
-		List<PhilosopherAttribute> attributes = russionPhylosopher.getAttributes();
+	public void testRussionPhylospoherAttributes() {
+        List<PhilosopherAttribute> attributes = russionPhylosopher.getAttributes();
 
-		assertEquals(2, attributes.size());
-	}
-
-	@Test
-	public void testCar(){
-		String brand = car.getBrand();
-		assertEquals("Skoda", brand);
-	}
-
-	@Test
-	public void testCarEngine(){
-		Engine engine = car.getEngine();
-		assertEquals(1200, engine.getEngineVolume());
-	}
-
-	@Test
-	public void testCarEngine2(){
-		Engine engine = car.getEngine();
-		assertEquals(1300, engine.getEngineVolume());
-	}
-
+        assertEquals(2, attributes.size());
+    }
 }
