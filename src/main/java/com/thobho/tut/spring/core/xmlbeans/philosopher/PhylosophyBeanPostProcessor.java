@@ -1,4 +1,4 @@
-package com.thobho.tut.spring.core.beans.philosopher;
+package com.thobho.tut.spring.core.xmlbeans.philosopher;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

@@ -1,4 +1,4 @@
-package com.thobho.tut.spring.core.beans.philosopher;
+package com.thobho.tut.spring.core.xmlbeans.philosopher;
 
 import java.util.List;
 
@@ -9,6 +9,15 @@ public class Philosopher implements InitializingBean {
 	private String name;
 	private HeavyQuestion mostImportantQuestion;
 	private List<PhilosopherAttribute> attributes;
+
+	public Philosopher(String name, HeavyQuestion mostImportantQuestion, List<PhilosopherAttribute> attributes) {
+		this.name = name;
+		this.mostImportantQuestion = mostImportantQuestion;
+		this.attributes = attributes;
+	}
+
+	public Philosopher() {
+	}
 
 	public String getName() {
 		return name;

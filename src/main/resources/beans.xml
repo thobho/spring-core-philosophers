@@ -6,16 +6,16 @@
 
 
     <bean id="heavyQuestion"
-          class="com.thobho.tut.spring.core.beans.philosopher.HeavyQuestion" scope="prototype">
+          class="com.thobho.tut.spring.core.xmlbeans.philosopher.HeavyQuestion" scope="prototype">
         <property name="question" value="What is a meaning of life?"/>
     </bean>
 
-    <bean id="polish_philosopher" class="com.thobho.tut.spring.core.beans.philosopher.Philosopher">
+    <bean id="polish_philosopher" class="com.thobho.tut.spring.core.xmlbeans.philosopher.Philosopher">
         <property name="name" value="janusz"/>
         <property name="mostImportantQuestion" ref="heavyQuestion"/>
         <property name="attributes">
             <list>
-                <bean class="com.thobho.tut.spring.core.beans.philosopher.PhilosopherAttribute" scope="prototype">
+                <bean class="com.thobho.tut.spring.core.xmlbeans.philosopher.PhilosopherAttribute" scope="prototype">
                     <constructor-arg type="java.lang.String" value="ksiazka"/>
                     <constructor-arg name="cost" value="12"/>
                 </bean>
@@ -23,17 +23,17 @@
         </property>
     </bean>
 
-    <bean id="russian_philosopher" class="com.thobho.tut.spring.core.beans.philosopher.Philosopher"
+    <bean id="russian_philosopher" class="com.thobho.tut.spring.core.xmlbeans.philosopher.Philosopher"
           primary="true">
         <property name="name" value="andriej"/>
         <property name="mostImportantQuestion" ref="heavyQuestion"/>
         <property name="attributes">
             <list>
-                <bean class="com.thobho.tut.spring.core.beans.philosopher.PhilosopherAttribute" scope="prototype">
+                <bean class="com.thobho.tut.spring.core.xmlbeans.philosopher.PhilosopherAttribute" scope="prototype">
                     <constructor-arg type="java.lang.String" value="marynarka"/>
                     <constructor-arg name="cost" value="15"/>
                 </bean>
-                <bean class="com.thobho.tut.spring.core.beans.philosopher.PhilosopherAttribute" scope="prototype">
+                <bean class="com.thobho.tut.spring.core.xmlbeans.philosopher.PhilosopherAttribute" scope="prototype">
                     <constructor-arg type="java.lang.String" value="ksiazka"/>
                     <constructor-arg name="cost" value="12"/>
                 </bean>
@@ -42,22 +42,22 @@
     </bean>
 
 
-    <bean id="german_philosopher" class="com.thobho.tut.spring.core.beans.philosopher.Philosopher"
+    <bean id="german_philosopher" class="com.thobho.tut.spring.core.xmlbeans.philosopher.Philosopher"
           init-method="afterPropertiesSet">
         <property name="name" value="janusz"/>
     </bean>
 
-    <bean class="com.thobho.tut.spring.core.beans.car.Car">
+    <bean class="com.thobho.tut.spring.core.xmlbeans.car.Car">
         <constructor-arg name="brand" value="Skoda"/>
         <constructor-arg type="int" value="120"/>
         <property name="engine" ref="engine"/>
     </bean>
 
-    <bean id="engine" class="com.thobho.tut.spring.core.beans.car.Engine">
+    <bean id="engine" class="com.thobho.tut.spring.core.xmlbeans.car.Engine">
         <constructor-arg name="engineVolume" value="1200"/>
         <constructor-arg name="engineType" value="GAS"/>
     </bean>
 
-    <bean class="com.thobho.tut.spring.core.beans.philosopher.PhylosophyBeanPostProcessor"/>
-    <bean class="com.thobho.tut.spring.core.beans.car.EngineBeanPostprocessor"/>
+    <bean class="com.thobho.tut.spring.core.xmlbeans.philosopher.PhylosophyBeanPostProcessor"/>
+    <bean class="com.thobho.tut.spring.core.xmlbeans.car.EngineBeanPostprocessor"/>
 </beans>

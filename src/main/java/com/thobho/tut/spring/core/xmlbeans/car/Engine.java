@@ -1,4 +1,4 @@
-package com.thobho.tut.spring.core.beans.car;
+package com.thobho.tut.spring.core.xmlbeans.car;
 
 public class Engine {
     private int engineVolume = 1200;

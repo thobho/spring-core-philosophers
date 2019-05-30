@@ -1,4 +1,4 @@
-package com.thobho.tut.spring.core.beans.philosopher;
+package com.thobho.tut.spring.core.xmlbeans.philosopher;
 
 import java.util.Objects;
 

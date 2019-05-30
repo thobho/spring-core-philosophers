@@ -1,10 +1,9 @@
-package com.thobho.tut.spring.core.beans.philosopher;
+package com.thobho.tut.spring.core.xmlbeans.philosopher;
 
 import java.util.List;
 import java.util.logging.Logger;
 
-import com.thobho.tut.spring.core.beans.car.Car;
-import com.thobho.tut.spring.core.beans.car.Engine;
+import com.thobho.tut.spring.core.xmlbeans.car.Car;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
